@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-01T15:50:12 IST" name="Default suite" finished-at="2025-12-01T15:50:26 IST" duration-ms="13749">
+    <groups>
+    </groups>
+    <test started-at="2025-12-01T15:50:12 IST" name="Default test" finished-at="2025-12-01T15:50:26 IST" duration-ms="13749">
+      <class name="tests.AllInteraction.AleartsTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.AllInteraction.AleartsTest@6aba2b86]" started-at="2025-12-01T15:50:12 IST" name="setUp" finished-at="2025-12-01T15:50:20 IST" duration-ms="7484" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="alearts()[pri:0, instance:tests.AllInteraction.AleartsTest@6aba2b86]" started-at="2025-12-01T15:50:20 IST" name="alearts" finished-at="2025-12-01T15:50:25 IST" duration-ms="5653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alearts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AllInteraction.AleartsTest@6aba2b86]" started-at="2025-12-01T15:50:25 IST" name="tearDown" finished-at="2025-12-01T15:50:26 IST" duration-ms="562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.AllInteraction.AleartsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
