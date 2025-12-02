@@ -50,4 +50,21 @@ public class Waits {
      js.executeScript("arguments[0].scrollIntoView(true)", elements);
      	 
  }
+ public static void ScrollToHalfCreen() 
+ {
+	 JavascriptExecutor js = (JavascriptExecutor) driver;
+	 js.executeScript("window.scrollTo(0, document.body.scrollHeight / 2);");
+     	 
+ }
+ public static void scrollElementToMiddle( WebElement element) {
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    js.executeScript(
+	        "const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);" +
+	        "const elementTop = arguments[0].getBoundingClientRect().top;" +
+	        "window.scrollBy(0, elementTop - (viewHeight/2));", 
+	        element
+	    );
+	}
+
+
 }

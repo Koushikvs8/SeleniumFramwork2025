@@ -12,10 +12,7 @@ public class ActionsUtil {
 	   this.driver=driver;
    }
 	
-   
-   
-   
-   public static void ScrollToView(WebElement elements) 
+   public void ScrollToView(WebElement elements) 
    {
        JavascriptExecutor js=(JavascriptExecutor)driver;
        js.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'})", elements);

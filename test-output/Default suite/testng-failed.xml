@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.AllInteraction.AleartsTest">
+      <class name="tests.AllInteraction.DatePicking">
         <methods>
           <include name="tearDown"/>
+          <include name="testSelectDateDuringBooking"/>
           <include name="setUp"/>
-          <include name="alearts"/>
         </methods>
-      </class> <!-- tests.AllInteraction.AleartsTest -->
+      </class> <!-- tests.AllInteraction.DatePicking -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
