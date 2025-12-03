@@ -24,7 +24,7 @@ public class DatePicking extends BaseTest {
 		//div[@aria-label='Search suggestions list']//div[@role='option']
 		driver.navigate().to("https://www.redbus.in/");
 		Waits wait=new Waits(driver);
-		/* WebElement fromBtn=driver.findElement(By.cssSelector("div[class='inputAndSwapWrapper___e7dc96'] div[class='labelCityWrapper___fd5744']"));
+	    WebElement fromBtn=driver.findElement(By.cssSelector("div[class='inputAndSwapWrapper___e7dc96'] div[class='labelCityWrapper___fd5744']"));
 		Waits.WaitByVisibility(fromBtn);
 		Waits.WaitByVisibility(fromBtn).click();
 		Waits.pause();
@@ -46,7 +46,7 @@ public class DatePicking extends BaseTest {
 				autoSuggestionsTo.get(i).click();
 				break;
 			}
-		}*/
+		}
 		Waits.pause();
 		Waits.pause();
 		

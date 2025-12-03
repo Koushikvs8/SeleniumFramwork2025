@@ -1,2 +1,12 @@
 BaseClass\BaseTest.class
+tests\AllInteraction\KeyboardAction.class
+tests\AllInteraction\NavigationTest.class
 tests\Locaters.class
+tests\AllInteraction\WindowHandlerTest.class
+tests\AllInteraction\FileUpload.class
+tests\AllInteraction\DatePicker.class
+tests\AllInteraction\frames.class
+tests\AllInteraction\dropDown.class
+tests\AllInteraction\mouseAction.class
+tests\AllInteraction\AleartsTest.class
+tests\AllInteraction\DatePicking.class

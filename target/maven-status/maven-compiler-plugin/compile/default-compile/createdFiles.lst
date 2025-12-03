@@ -1,2 +1,4 @@
+utilities\ActionsUtil.class
 utilities\DriverManeger.class
+utilities\TakeScreenShot.class
 utilities\Waits.class

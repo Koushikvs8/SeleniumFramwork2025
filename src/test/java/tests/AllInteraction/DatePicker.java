@@ -1,9 +1,31 @@
 package tests.AllInteraction;
 
-public class DatePicker {
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
-	public DatePicker() {
-		// TODO Auto-generated constructor stub
+import BaseClass.BaseTest;
+import utilities.Waits;
+
+public class DatePicker extends BaseTest{
+
+	@Test
+	public void PickTheDate()
+	{   
+	    String[] dateMonthYear= "12/12/2025".split("/");
+	    String  date=dateMonthYear[0];
+	    String month=dateMonthYear[1];
+	    String year=dateMonthYear[2];
+	    
+	    WebElement dateInput=driver.findElement(By.xpath("//input[@id='txtDate']"));
+	    Waits.WaitByVisibility(dateInput).click();
+	    Waits.pause();
+	    
+	    
+	    
+		
 	}
+	
+   
 
 }
