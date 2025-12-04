@@ -22,7 +22,7 @@ public class BaseTest {
 	public static Properties prop;
 	String browser;
 	
-	@Parameters("appURL")
+	//@Parameters("appURL")
 	@BeforeMethod
 	public void setUp(@Optional String appURL)
 	{

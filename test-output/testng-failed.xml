@@ -1,15 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
+      <class name="tests.AllInteraction.mouseAction">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Mouseactions"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.AllInteraction.mouseAction -->
+      <class name="tests.AllInteraction.FileUpload">
+        <methods>
+          <include name="tearDown"/>
+          <include name="fileUplaod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.AllInteraction.FileUpload -->
+      <class name="tests.AllInteraction.WindowHandlerTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="test"/>
+          <include name="WindowHandle"/>
+        </methods>
+      </class> <!-- tests.AllInteraction.WindowHandlerTest -->
+      <class name="tests.AllInteraction.AleartsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="test"/>
+          <include name="alearts"/>
+        </methods>
+      </class> <!-- tests.AllInteraction.AleartsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" parallel="methods" name="Test2(failed)">
+    <classes>
+      <class name="tests.AllInteraction.dropDown">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="dropdown"/>
+        </methods>
+      </class> <!-- tests.AllInteraction.dropDown -->
       <class name="tests.AllInteraction.DatePicking">
         <methods>
           <include name="tearDown"/>
           <include name="testSelectDateDuringBooking"/>
           <include name="setUp"/>
+          <include name="test"/>
         </methods>
       </class> <!-- tests.AllInteraction.DatePicking -->
+      <class name="tests.AllInteraction.NavigationTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="navigate"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.AllInteraction.NavigationTest -->
+      <class name="tests.AllInteraction.DatePicker">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="PickTheDate"/>
+        </methods>
+      </class> <!-- tests.AllInteraction.DatePicker -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
